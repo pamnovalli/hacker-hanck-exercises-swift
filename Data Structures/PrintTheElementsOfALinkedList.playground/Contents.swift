@@ -12,16 +12,14 @@ class SinglyLinkedListNode {
     }
 }
 
-
 func printLinkedList(head: SinglyLinkedListNode?) -> Void {
     var node = head
 
     while node?.next != nil {
-        print("\(node?.next?.data ?? 0)\n")
+        print(node?.next?.data ?? 0)
         node = node?.next
     }
 }
-
 
 printLinkedList(head: head)
 
